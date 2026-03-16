@@ -815,6 +815,8 @@ def show_qb_pressure_profile(filtered_df):
         "index":"Trait"
     })
     profile_df["Trait"] = profile_df["Trait"].str.replace("_pct", "", regex=False)
+    profile_df["Percentile"] = pd.to_numeric(profile_df["Percentile"], errors="coerce")
+    profile_df = profile_df.dropna(subset=["Percentile"]).copy()
     profile_df["Percentile"] = profile_df["Percentile"].round(0).astype(int)
     profile_df = profile_df.sort_values(by="Percentile",ascending=False)
 
