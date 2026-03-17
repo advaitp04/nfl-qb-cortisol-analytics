@@ -76,8 +76,8 @@ This guide explains how to run the full NFL QB Cortisol Index pipeline locally, 
 Clone the GitHub repository and navigate into the project directory.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nfl-qb-cortisol-index.git
-cd nfl-qb-cortisol-index
+git clone https://github.com/YOUR_USERNAME/nfl-qb-cortisol-analytics.git
+cd nfl-qb-cortisol-analytics
 ```
 # 2. Create A Python Virtual Environment (Recommended)
 
